@@ -1,0 +1,78 @@
+{
+  "name": "simple-spring-boot",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "employee create",
+      "seq": 2,
+      "request": {
+        "url": "http://localhost:8080/employee",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"employeeId\":1232,\n  \"firstName\":\"first\",\n  \"lastName\":\"last\",\n  \"emailId\":\"first@gmail.com\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "employee get",
+      "seq": 3,
+      "request": {
+        "url": "http://localhost:8080/employee",
+        "method": "GET",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"employeeId\":1232,\n  \"firstName\":\"first\",\n  \"lastName\":\"last\",\n  \"emailId\":\"first@gmail.com\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    }
+  ],
+  "environments": [],
+  "brunoConfig": {
+    "version": "1",
+    "name": "simple-spring-boot",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ]
+  }
+}
